@@ -1,0 +1,66 @@
+---
+import InstagramIcon from '@/icons/Instagram.astro'
+import FacebookIcon from '@/icons/Facebook.astro'
+import GithubIcon from '@/icons/Github.astro'
+---
+
+<footer class="bg-black text-white py-20 px-4">
+  <div
+    class="max-w-7xl mx-auto flex flex-col items-center justify-between gap-14 md:flex-row md:gap-36"
+  >
+    <h3 class="text-5xl font-semibold text-balance">Create, Explore & Collect Abstract NTFs</h3>
+
+    <section class="w-[80%] flex flex-col gap-4 text-sm text-center items-center md:items-end">
+      <div class="flex gap-6">
+        <a
+          href="#"
+          class="text-gray-400 transition-colors duration-300 ease-in-out hover:text-white"
+        >
+          Privacy Policy
+        </a>
+        <a
+          href="#"
+          class="text-gray-400 transition-colors duration-300 ease-in-out hover:text-white"
+        >
+          Cooperation
+        </a>
+        <a
+          href="#"
+          class="text-gray-400 transition-colors duration-300 ease-in-out hover:text-white"
+        >
+          Sponsorship
+        </a>
+        <a
+          href="#"
+          class="text-gray-400 transition-colors duration-300 ease-in-out hover:text-white"
+        >
+          Contact Us
+        </a>
+      </div>
+      <div class="flex items-center justify-center gap-4">
+        <a
+          href="#"
+          target="_blank"
+          class="cursor-pointer transition-colors duration-300 ease-in-out hover:fill-gray-300"
+        >
+          <InstagramIcon />
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          class="cursor-pointer transition-colors duration-300 ease-in-out hover:fill-gray-300"
+        >
+          <FacebookIcon />
+        </a>
+        <a
+          href="https://github.com/kfoq7/ntf-website"
+          target="_blank"
+          class="cursor-pointer transition-colors duration-300 ease-in-out hover:fill-gray-300"
+        >
+          <GithubIcon />
+        </a>
+      </div>
+      <span class="text-sm text-gray-500">Copyright © {new Date().getFullYear()} AsmrProg</span>
+    </section>
+  </div>
+</footer>

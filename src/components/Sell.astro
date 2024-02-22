@@ -1,0 +1,20 @@
+---
+import Section from './Section.astro'
+import { info } from '@/data'
+---
+
+<Section title="Sell Your NTFs">
+  <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-7">
+    {
+      info.map(({ title, Icon, description }) => (
+        <div class="p-5 bg-white rounded-2xl shadow-sm transition-all ease-in-out delay-300 cursor-pointer hover:shadow-lg">
+          <div class="flex items-center gap-2.5">
+            <Icon />
+            <h5 class="font-semibold text-lg">{title}</h5>
+          </div>
+          <p class="mt-2.5 px-1">{description}</p>
+        </div>
+      ))
+    }
+  </div>
+</Section>
